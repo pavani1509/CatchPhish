@@ -1,0 +1,17 @@
+{% extends "base.html" %} {% block title %}predict{% endblock %} {% block content
+%}
+<form method="POST" class="form">
+  <h1 align="center" class="mb-2">CatchPhish</h3>
+  <p>
+    With CatchPhish, you can scan suspicious URLs and monitor for lookalikes
+    variants of a domain
+  </p>
+  <img class="image" src="./static/image.png" alt="" width="400px" />
+  <div class="form-group mb-3 main">
+    <!-- <label for="url" class="form-label m-2">URL </label> -->
+    <input type="url" id="main_input" class="url form-control rounded-3"
+    name="url" placeholder="scan a URL"/ >
+    <button type="submit" id="scan" class="btn">scan</button>
+  </div>
+</form>
+{% endblock %}
